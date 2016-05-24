@@ -1,0 +1,3 @@
+[submodule "luarules\\gadgets\\ai\\BAR"]
+	path = luarules\\gadgets\\ai\\BAR
+	url = https://github.com/eronoobos/BABAR-The-Shardifant.git
