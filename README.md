@@ -10,7 +10,7 @@ This is a Spring mod archive that Balanced Annihilation Reloaded may put in its 
 
 Clone this repository into a Spring archive directory in its games directory. `--recursive` must be used to get [the submodule that contains the configuration](https://github.com/eronoobos/BABAR-The-Shardifant).
 ```
-git clone --recursive https://github.com/eronoobos/ShardSpringLua.git ~/.spring/games/BAR-Shard-LuaAI.sdd
+git clone --recursive https://github.com/eronoobos/BAR-Shard-LuaAI.git ~/.spring/games/BAR-Shard-LuaAI.sdd
 ```
 
 Checkout Balanced Annihilation Reloaded via SVN into a Spring archive directory:
