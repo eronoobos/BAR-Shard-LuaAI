@@ -18,7 +18,7 @@ Checkout Balanced Annihilation Reloaded via SVN into a Spring archive directory:
 svn checkout http://imolarpg.dyndns.org/svn/branches/BAR  ~/.spring/games/BAR.sdd
 ```
 
-Add this mod as a dependency to Balanced Annihilation Reloaded's modinfo.lua, and change the mod's version to "shard" or something else, to differenciate it from the unmodified game version:
+In BAR.sdd/modinfo.lua add this mod as a dependency and change Balanced Annihilation Reloaded's version to "shard" or something else, to differenciate it from the unmodified game version:
 ```
 return {
   name='Balanced Annihilation Reloaded',
