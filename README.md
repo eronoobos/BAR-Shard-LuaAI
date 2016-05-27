@@ -6,14 +6,19 @@
 
 This is a Spring mod archive that Balanced Annihilation Reloaded may put in its dependencies. This is only the configuration for Balanced Annihilation Reloaded. To run the AI, Balanced Annihilation Reloaded must also include the [Shard Lua AI base](https://github.com/eronoobos/ShardSpringLua).
 
-### How To
+### Installation
 
-Clone this repository into a Spring archive in its games directory.
+Clone this repository into a Spring archive directory in its games directory. `--recursive` must be used to get [the submodule that contains the configuration](https://github.com/eronoobos/BABAR-The-Shardifant).
 ```
-git clone https://github.com/eronoobos/ShardSpringLua.git ~/.spring/games/BAR-Shard-LuaAI.sdd
+git clone --recursive https://github.com/eronoobos/ShardSpringLua.git ~/.spring/games/BAR-Shard-LuaAI.sdd
 ```
 
-Add this mod as a dependency to Balanced Annihilation Reloaded's modinfo.lua.
+Checkout Balanced Annihilation Reloaded via SVN into a Spring archive directory:
+```
+svn checkout http://imolarpg.dyndns.org/svn/branches/BAR  ~/.spring/games/BAR.sdd
+```
+
+Add this mod as a dependency to Balanced Annihilation Reloaded's modinfo.lua, and change the mod's version to "shard" or something else, to differenciate it from the unmodified game version:
 ```
 return {
   name='Balanced Annihilation Reloaded',
@@ -31,4 +36,9 @@ return {
 }
 ```
 
-The first dependency line, `"Shard LuaAI $VERSION"`, is the Shard Lua AI base.
+The first dependency line, `"Shard LuaAI $VERSION"`, is the Shard Lua AI base, which must be cloned into place:
+```
+git clone https://github.com/eronoobos/ShardSpringLua.git ~/.spring/games/ShardSpringLua.sdd
+```
+
+To resulting AI can be found in Spring lobbies under the name "ShardLua <not-versioned>".
