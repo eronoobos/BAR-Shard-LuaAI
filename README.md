@@ -41,4 +41,16 @@ The first dependency line, `"Shard LuaAI $VERSION"`, is the Shard Lua AI base, w
 git clone https://github.com/eronoobos/ShardSpringLua.git ~/.spring/games/ShardSpringLua.sdd
 ```
 
-To resulting AI can be found in Spring lobbies under the name "ShardLua <not-versioned>".
+Finally, BAR.sdd/LuaAI.lua must be modified to include the AI. Just after the line
+```
+return {
+```
+insert
+```
+{
+name = 'ShardLua',
+desc = 'Shard by AF for Spring Lua',
+},
+```
+
+The resulting AI can be found in Spring lobbies under the name "ShardLua \<not-versioned>".
